@@ -1,9 +1,13 @@
+:root{
+    --nav_color: #CC9544;
+    --nav_anchors_color: #1C0A00;
+}
 *{
     padding: 0;
     margin: 0;
 }
 .navbar-style{
-    background-color: #D49B54;
+    background-color: var(--nav_color);
     display: flex;
     height: 70px;
     justify-content: space-between;
@@ -17,7 +21,7 @@
 }
 .nav-anchors-container a{
     text-decoration: none;
-    color:purple;
+    color:var(--nav_anchors_color);
     font-size: 18px;
     margin-right: 25px;
     font-weight: 600;

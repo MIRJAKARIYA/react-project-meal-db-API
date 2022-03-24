@@ -1,3 +1,28 @@
 .App {
   text-align: center;
 }
+.input-field{
+  height: 30px;
+  width:25%;
+  font-size: 16px;
+}
+.input-field:focus{
+  padding-left: 5px;
+  font-size: 20px;
+}
+.input-container{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.search-button{
+  width: 8%;
+  background-color: yellowgreen;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+.search-button:hover{
+  background-color: rgb(5, 158, 5);
+}
