@@ -4,6 +4,10 @@
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.541);
     background-color: rgba(0, 0, 0, 0.808);
     color: white;
+    transition: all 0.5s;
+}
+.meal:hover{
+    transform: translateY(-10px);
 }
 .meal-img{
     width: 90%;

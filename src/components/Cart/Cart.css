@@ -1,7 +1,12 @@
 .cart{
     background-color: rgba(128, 128, 128, 0.418);
     border-radius: 10px;
-    min-height: 50vh;
     position: sticky;
     top: 0;
+    padding: 8px;
+}
+.added-products{
+    border-radius: 8px;
+    padding: 10px;
+
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Meal.css'
-const Meal = ({meal}) => {
-    const {strMealThumb, strMeal, strInstructions} = meal;
+const Meal = ({meal,addToCart}) => {
+    const {strMealThumb, strMeal, strInstructions, idMeal} = meal;
     return (
         <div className='meal'>
             <div className='img-container'>
@@ -11,7 +11,7 @@ const Meal = ({meal}) => {
                 <h4>{strMeal}</h4>
                 <p>{strInstructions.slice(0,100)}</p>
             </div>
-            <button className='add-to-cart-button'>Add to cart</button>
+            <button onClick={()=> addToCart(idMeal)} className='add-to-cart-button'>Add to cart <span></span></button>
         </div>
     );
 };

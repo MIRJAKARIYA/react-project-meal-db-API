@@ -5,6 +5,7 @@
   height: 30px;
   width:25%;
   font-size: 16px;
+  min-width: 200px;
 }
 .input-field:focus{
   padding-left: 5px;

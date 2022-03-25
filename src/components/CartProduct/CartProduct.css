@@ -1,0 +1,21 @@
+.cart-single-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.582);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.cart-single-product-img{
+    width: 50px;
+}
+.meal-img-name-container{
+    display: flex;
+    align-items: center;
+}
+.meal-name{
+    margin-left: 5px;
+}
