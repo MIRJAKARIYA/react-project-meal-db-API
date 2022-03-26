@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Meal from '../meal/Meal';
+import { getCartFromLocalStorage, setCartToLocalStorage } from '../utilities/localStorageHandle';
 import './Shop.css';
 const Shop = ({searchText}) => {
     const [meals, setMeals] = useState([]);
@@ -10,6 +11,17 @@ const Shop = ({searchText}) => {
         .then(res => res.json())
         .then(data =>setMeals(data.meals))
     },[searchText]);
+
+
+    useEffect( ()=>{
+        
+        setCartToLocalStorage(cart)
+    },[cart]);
+    useEffect( ()=> {
+        const localCart = getCartFromLocalStorage();
+        setCart(localCart)
+    },[])
+
     const addToCart = (id) =>{
         const addMealToCart = meals.find(meal => meal.idMeal === id);
         const isExists = cart.find(meal => meal.id === id);
